@@ -12,3 +12,4 @@ libpng12-dev \
 RUN docker-php-ext-install bcmath gettext mysql mysqli pdo pdo_mysql
 RUN docker-php-ext-install opcache zip
 RUN apt-get install -y mysql-client
+RUN a2enmod rewrite
