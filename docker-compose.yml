@@ -6,6 +6,7 @@ web:
   volumes:
     - ./www:/var/www/html
     - ./infrastructure/vhost.conf:/etc/httpd/conf.d/001-default.conf
+    - ./infrastructure/log/:/var/log/apache2/
   links:
     - db
 db:
